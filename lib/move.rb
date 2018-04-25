@@ -12,6 +12,6 @@ def input_to_index(string)
   string.to_i - 1
 end
 # code your input_to_index and move method here!
-def move(board, index, user_marker = "X")
-  @board[index.to_i] = user_marker
+def move(board, index, user_marker = "X" || "O")
+  board[index.to_i] = user_marker
 end
